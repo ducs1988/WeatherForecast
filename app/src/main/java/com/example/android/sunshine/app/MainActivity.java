@@ -84,6 +84,7 @@ public class MainActivity extends ActionBarActivity {
             ListView listView = (ListView) rootView.findViewById(R.id.listview_forcast);
             listView.setAdapter(adapter);
 
+            // Test check
             return rootView;
         }
     }
