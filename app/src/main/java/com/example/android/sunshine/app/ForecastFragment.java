@@ -89,6 +89,10 @@ public class ForecastFragment extends Fragment {
         ListView listView = (ListView) rootView.findViewById(R.id.listview_forcast);
         listView.setAdapter(mWeatherAdapter);
 
+        // force it refresh when startup the App, so to avoid see the fake data.
+        FetchWeatherTask weatherTask = new FetchWeatherTask();
+        weatherTask.execute("Chicago");
+
         return rootView;
     }
 
