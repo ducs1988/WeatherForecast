@@ -113,8 +113,8 @@ public class ForecastFragment extends Fragment {
         });*/
 
         // force it refresh when startup the App, so to avoid see the fake data.
-        FetchWeatherTask weatherTask = new FetchWeatherTask();
-        weatherTask.execute("Chicago");
+        //FetchWeatherTask weatherTask = new FetchWeatherTask();
+        //weatherTask.execute("Chicago");
 
         return rootView;
     }
